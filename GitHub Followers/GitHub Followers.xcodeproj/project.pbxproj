@@ -7,28 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C73D8CCC2A46060300A1997A /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CCB2A46060300A1997A /* UIStackView+Extension.swift */; };
 		C75C8C8C2A45DFFB00B46DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8C8B2A45DFFB00B46DEF /* AppDelegate.swift */; };
 		C75C8C952A45DFFD00B46DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75C8C942A45DFFD00B46DEF /* Assets.xcassets */; };
 		C75C8C982A45DFFD00B46DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75C8C962A45DFFD00B46DEF /* LaunchScreen.storyboard */; };
 		C75C8CAC2A45E1F600B46DEF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8CAB2A45E1F600B46DEF /* SearchViewController.swift */; };
-		C75C8CAE2A45E20500B46DEF /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8CAD2A45E20500B46DEF /* OnboardViewController.swift */; };
+		C75C8CAE2A45E20500B46DEF /* AppTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8CAD2A45E20500B46DEF /* AppTutorialViewController.swift */; };
 		C75C8CB02A45E21600B46DEF /* FollowerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8CAF2A45E21600B46DEF /* FollowerListViewController.swift */; };
 		C75C8CB22A45E22900B46DEF /* FavoriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8CB12A45E22900B46DEF /* FavoriteListViewController.swift */; };
 		C75C8CB42A45E23900B46DEF /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8CB32A45E23900B46DEF /* UserDetailViewController.swift */; };
 		C75C8CB72A45E2C300B46DEF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C75C8CB62A45E2C300B46DEF /* SnapKit */; };
+		C75C8CBA2A45E65700B46DEF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8CB92A45E65700B46DEF /* BaseViewController.swift */; };
+		C75C8CBC2A45E6BE00B46DEF /* AppTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8CBB2A45E6BE00B46DEF /* AppTutorial.swift */; };
+		C75C8CBE2A45FA5F00B46DEF /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8CBD2A45FA5F00B46DEF /* UITableView+Extension.swift */; };
+		C75C8CC02A45FAC200B46DEF /* BaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8CBF2A45FAC200B46DEF /* BaseTableCell.swift */; };
+		C75C8CC22A45FB0E00B46DEF /* AppTutorialTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8CC12A45FB0E00B46DEF /* AppTutorialTableCell.swift */; };
+		C75C8CC42A45FC3700B46DEF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8CC32A45FC3700B46DEF /* UIView+Extension.swift */; };
+		C75C8CC62A45FCC600B46DEF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8CC52A45FCC600B46DEF /* UIColor+Extension.swift */; };
+		C75C8CC82A45FE1200B46DEF /* CAGradientLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8CC72A45FE1200B46DEF /* CAGradientLayer+Extension.swift */; };
+		C75C8CCB2A45FE5800B46DEF /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8CCA2A45FE5800B46DEF /* AppConstant.swift */; };
+		C75C8CCD2A45FFBF00B46DEF /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8CCC2A45FFBF00B46DEF /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C73D8CCB2A46060300A1997A /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		C75C8C882A45DFFB00B46DEF /* GitHub Followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75C8C8B2A45DFFB00B46DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C75C8C942A45DFFD00B46DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C75C8C972A45DFFD00B46DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C75C8C992A45DFFD00B46DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C75C8CAB2A45E1F600B46DEF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		C75C8CAD2A45E20500B46DEF /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		C75C8CAD2A45E20500B46DEF /* AppTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTutorialViewController.swift; sourceTree = "<group>"; };
 		C75C8CAF2A45E21600B46DEF /* FollowerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListViewController.swift; sourceTree = "<group>"; };
 		C75C8CB12A45E22900B46DEF /* FavoriteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListViewController.swift; sourceTree = "<group>"; };
 		C75C8CB32A45E23900B46DEF /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		C75C8CB92A45E65700B46DEF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C75C8CBB2A45E6BE00B46DEF /* AppTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTutorial.swift; sourceTree = "<group>"; };
+		C75C8CBD2A45FA5F00B46DEF /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		C75C8CBF2A45FAC200B46DEF /* BaseTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableCell.swift; sourceTree = "<group>"; };
+		C75C8CC12A45FB0E00B46DEF /* AppTutorialTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTutorialTableCell.swift; sourceTree = "<group>"; };
+		C75C8CC32A45FC3700B46DEF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		C75C8CC52A45FCC600B46DEF /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		C75C8CC72A45FE1200B46DEF /* CAGradientLayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Extension.swift"; sourceTree = "<group>"; };
+		C75C8CCA2A45FE5800B46DEF /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		C75C8CCC2A45FFBF00B46DEF /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +84,7 @@
 		C75C8C8A2A45DFFB00B46DEF /* GitHub Followers */ = {
 			isa = PBXGroup;
 			children = (
+				C75C8CC92A45FE4B00B46DEF /* Utility */,
 				C75C8CA02A45E08100B46DEF /* AppDelegate */,
 				C75C8CA12A45E08E00B46DEF /* Modules */,
 				C75C8CA52A45E0C500B46DEF /* ViewModels */,
@@ -94,10 +117,11 @@
 		C75C8CA12A45E08E00B46DEF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C75C8CB82A45E64800B46DEF /* Common */,
+				C75C8CA72A45E19700B46DEF /* Tutorials */,
 				C75C8CAA2A45E1DC00B46DEF /* Details */,
 				C75C8CA92A45E1C200B46DEF /* Favorites */,
 				C75C8CA82A45E1B800B46DEF /* Followers */,
-				C75C8CA72A45E19700B46DEF /* Onboard */,
 				C75C8CA62A45E17900B46DEF /* Search */,
 			);
 			path = Modules;
@@ -106,6 +130,12 @@
 		C75C8CA22A45E09800B46DEF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C75C8CBD2A45FA5F00B46DEF /* UITableView+Extension.swift */,
+				C75C8CC32A45FC3700B46DEF /* UIView+Extension.swift */,
+				C75C8CC52A45FCC600B46DEF /* UIColor+Extension.swift */,
+				C75C8CC72A45FE1200B46DEF /* CAGradientLayer+Extension.swift */,
+				C75C8CCC2A45FFBF00B46DEF /* String+Extension.swift */,
+				C73D8CCB2A46060300A1997A /* UIStackView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -113,6 +143,7 @@
 		C75C8CA32A45E0A900B46DEF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C75C8CBF2A45FAC200B46DEF /* BaseTableCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,12 +170,14 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
-		C75C8CA72A45E19700B46DEF /* Onboard */ = {
+		C75C8CA72A45E19700B46DEF /* Tutorials */ = {
 			isa = PBXGroup;
 			children = (
-				C75C8CAD2A45E20500B46DEF /* OnboardViewController.swift */,
+				C75C8CAD2A45E20500B46DEF /* AppTutorialViewController.swift */,
+				C75C8CBB2A45E6BE00B46DEF /* AppTutorial.swift */,
+				C75C8CC12A45FB0E00B46DEF /* AppTutorialTableCell.swift */,
 			);
-			path = Onboard;
+			path = Tutorials;
 			sourceTree = "<group>";
 		};
 		C75C8CA82A45E1B800B46DEF /* Followers */ = {
@@ -169,6 +202,22 @@
 				C75C8CB32A45E23900B46DEF /* UserDetailViewController.swift */,
 			);
 			path = Details;
+			sourceTree = "<group>";
+		};
+		C75C8CB82A45E64800B46DEF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C75C8CB92A45E65700B46DEF /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C75C8CC92A45FE4B00B46DEF /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C75C8CCA2A45FE5800B46DEF /* AppConstant.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,12 +296,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75C8CCD2A45FFBF00B46DEF /* String+Extension.swift in Sources */,
 				C75C8CB02A45E21600B46DEF /* FollowerListViewController.swift in Sources */,
 				C75C8CAC2A45E1F600B46DEF /* SearchViewController.swift in Sources */,
+				C75C8CBE2A45FA5F00B46DEF /* UITableView+Extension.swift in Sources */,
+				C75C8CBC2A45E6BE00B46DEF /* AppTutorial.swift in Sources */,
 				C75C8CB42A45E23900B46DEF /* UserDetailViewController.swift in Sources */,
 				C75C8C8C2A45DFFB00B46DEF /* AppDelegate.swift in Sources */,
+				C73D8CCC2A46060300A1997A /* UIStackView+Extension.swift in Sources */,
+				C75C8CCB2A45FE5800B46DEF /* AppConstant.swift in Sources */,
+				C75C8CC42A45FC3700B46DEF /* UIView+Extension.swift in Sources */,
 				C75C8CB22A45E22900B46DEF /* FavoriteListViewController.swift in Sources */,
-				C75C8CAE2A45E20500B46DEF /* OnboardViewController.swift in Sources */,
+				C75C8CC02A45FAC200B46DEF /* BaseTableCell.swift in Sources */,
+				C75C8CC82A45FE1200B46DEF /* CAGradientLayer+Extension.swift in Sources */,
+				C75C8CC22A45FB0E00B46DEF /* AppTutorialTableCell.swift in Sources */,
+				C75C8CC62A45FCC600B46DEF /* UIColor+Extension.swift in Sources */,
+				C75C8CBA2A45E65700B46DEF /* BaseViewController.swift in Sources */,
+				C75C8CAE2A45E20500B46DEF /* AppTutorialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

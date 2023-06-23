@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: - LifeCycle
     private func initialScreenSetup() {
-        let initialController = OnboardViewController()
+        let initialController = AppTutorialViewController(style: .grouped)
         let navigationController = UINavigationController(rootViewController: initialController)
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController
