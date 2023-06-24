@@ -21,6 +21,14 @@
 		C73D8CE82A46A82B00A1997A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C73D8CE72A46A82B00A1997A /* SDWebImage */; };
 		C73D8CEA2A46A8C800A1997A /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CE92A46A8C800A1997A /* UICollectionView+Extension.swift */; };
 		C73D8CEC2A46AA8F00A1997A /* GitHubFollower.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CEB2A46AA8F00A1997A /* GitHubFollower.swift */; };
+		C73D8CEE2A46B07600A1997A /* UserBasicInfoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CED2A46B07600A1997A /* UserBasicInfoTableCell.swift */; };
+		C73D8CF02A46B09700A1997A /* UserReposInfoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CEF2A46B09700A1997A /* UserReposInfoTableCell.swift */; };
+		C73D8CF22A46B0B100A1997A /* UserFollowInfoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CF12A46B0B100A1997A /* UserFollowInfoTableCell.swift */; };
+		C73D8CF42A46D96E00A1997A /* GitHubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CF32A46D96E00A1997A /* GitHubUser.swift */; };
+		C73D8CF62A46DAF300A1997A /* UserDetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CF52A46DAF300A1997A /* UserDetailDataSource.swift */; };
+		C73D8CF82A46DB2800A1997A /* GitHubUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CF72A46DB2800A1997A /* GitHubUserViewModel.swift */; };
+		C73D8CFA2A470BF300A1997A /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CF92A470BF300A1997A /* Int+Extension.swift */; };
+		C73D8CFC2A47272100A1997A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CFB2A47272100A1997A /* Date+Extension.swift */; };
 		C75C8C8C2A45DFFB00B46DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8C8B2A45DFFB00B46DEF /* AppDelegate.swift */; };
 		C75C8C952A45DFFD00B46DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75C8C942A45DFFD00B46DEF /* Assets.xcassets */; };
 		C75C8C982A45DFFD00B46DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75C8C962A45DFFD00B46DEF /* LaunchScreen.storyboard */; };
@@ -56,6 +64,14 @@
 		C73D8CE42A46A7FA00A1997A /* BaseCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionCell.swift; sourceTree = "<group>"; };
 		C73D8CE92A46A8C800A1997A /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		C73D8CEB2A46AA8F00A1997A /* GitHubFollower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubFollower.swift; sourceTree = "<group>"; };
+		C73D8CED2A46B07600A1997A /* UserBasicInfoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBasicInfoTableCell.swift; sourceTree = "<group>"; };
+		C73D8CEF2A46B09700A1997A /* UserReposInfoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReposInfoTableCell.swift; sourceTree = "<group>"; };
+		C73D8CF12A46B0B100A1997A /* UserFollowInfoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowInfoTableCell.swift; sourceTree = "<group>"; };
+		C73D8CF32A46D96E00A1997A /* GitHubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUser.swift; sourceTree = "<group>"; };
+		C73D8CF52A46DAF300A1997A /* UserDetailDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailDataSource.swift; sourceTree = "<group>"; };
+		C73D8CF72A46DB2800A1997A /* GitHubUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserViewModel.swift; sourceTree = "<group>"; };
+		C73D8CF92A470BF300A1997A /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		C73D8CFB2A47272100A1997A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		C75C8C882A45DFFB00B46DEF /* GitHub Followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75C8C8B2A45DFFB00B46DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C75C8C942A45DFFD00B46DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -177,6 +193,8 @@
 				C73D8CCB2A46060300A1997A /* UIStackView+Extension.swift */,
 				C73D8CCD2A46A30300A1997A /* UserDefault+Extension.swift */,
 				C73D8CE92A46A8C800A1997A /* UICollectionView+Extension.swift */,
+				C73D8CF92A470BF300A1997A /* Int+Extension.swift */,
+				C73D8CFB2A47272100A1997A /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -194,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				C73D8CEB2A46AA8F00A1997A /* GitHubFollower.swift */,
+				C73D8CF32A46D96E00A1997A /* GitHubUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,6 +220,8 @@
 		C75C8CA52A45E0C500B46DEF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C73D8CDF2A46A69200A1997A /* GitHubFollowerViewModel.swift */,
+				C73D8CF72A46DB2800A1997A /* GitHubUserViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -229,7 +250,6 @@
 				C75C8CAF2A45E21600B46DEF /* FollowerListViewController.swift */,
 				C73D8CDC2A46A69200A1997A /* GitHubProfileCollectionCell.swift */,
 				C73D8CDE2A46A69200A1997A /* FollowerListDataSource.swift */,
-				C73D8CDF2A46A69200A1997A /* GitHubFollowerViewModel.swift */,
 			);
 			path = Followers;
 			sourceTree = "<group>";
@@ -246,6 +266,10 @@
 			isa = PBXGroup;
 			children = (
 				C75C8CB32A45E23900B46DEF /* UserDetailViewController.swift */,
+				C73D8CED2A46B07600A1997A /* UserBasicInfoTableCell.swift */,
+				C73D8CEF2A46B09700A1997A /* UserReposInfoTableCell.swift */,
+				C73D8CF12A46B0B100A1997A /* UserFollowInfoTableCell.swift */,
+				C73D8CF52A46DAF300A1997A /* UserDetailDataSource.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -352,7 +376,9 @@
 				C75C8CAC2A45E1F600B46DEF /* SearchViewController.swift in Sources */,
 				C75C8CBE2A45FA5F00B46DEF /* UITableView+Extension.swift in Sources */,
 				C73D8CD92A46A4D100A1997A /* NANetworkManager.swift in Sources */,
+				C73D8CF62A46DAF300A1997A /* UserDetailDataSource.swift in Sources */,
 				C73D8CEA2A46A8C800A1997A /* UICollectionView+Extension.swift in Sources */,
+				C73D8CF82A46DB2800A1997A /* GitHubUserViewModel.swift in Sources */,
 				C73D8CD72A46A4D100A1997A /* NAError.swift in Sources */,
 				C75C8CBC2A45E6BE00B46DEF /* AppTutorial.swift in Sources */,
 				C75C8CB42A45E23900B46DEF /* UserDetailViewController.swift in Sources */,
@@ -360,12 +386,16 @@
 				C73D8CCC2A46060300A1997A /* UIStackView+Extension.swift in Sources */,
 				C75C8CCB2A45FE5800B46DEF /* AppConstant.swift in Sources */,
 				C75C8CC42A45FC3700B46DEF /* UIView+Extension.swift in Sources */,
+				C73D8CFC2A47272100A1997A /* Date+Extension.swift in Sources */,
 				C75C8CB22A45E22900B46DEF /* FavoriteListViewController.swift in Sources */,
 				C75C8CC02A45FAC200B46DEF /* BaseTableCell.swift in Sources */,
 				C75C8CC82A45FE1200B46DEF /* CAGradientLayer+Extension.swift in Sources */,
+				C73D8CFA2A470BF300A1997A /* Int+Extension.swift in Sources */,
 				C75C8CC22A45FB0E00B46DEF /* AppTutorialTableCell.swift in Sources */,
 				C73D8CE52A46A7FA00A1997A /* BaseCollectionCell.swift in Sources */,
+				C73D8CF42A46D96E00A1997A /* GitHubUser.swift in Sources */,
 				C73D8CDB2A46A4D100A1997A /* NAEndpoint.swift in Sources */,
+				C73D8CEE2A46B07600A1997A /* UserBasicInfoTableCell.swift in Sources */,
 				C73D8CCE2A46A30300A1997A /* UserDefault+Extension.swift in Sources */,
 				C75C8CC62A45FCC600B46DEF /* UIColor+Extension.swift in Sources */,
 				C73D8CE32A46A69200A1997A /* GitHubFollowerViewModel.swift in Sources */,
@@ -373,6 +403,8 @@
 				C73D8CEC2A46AA8F00A1997A /* GitHubFollower.swift in Sources */,
 				C73D8CE22A46A69200A1997A /* FollowerListDataSource.swift in Sources */,
 				C75C8CAE2A45E20500B46DEF /* AppTutorialViewController.swift in Sources */,
+				C73D8CF22A46B0B100A1997A /* UserFollowInfoTableCell.swift in Sources */,
+				C73D8CF02A46B09700A1997A /* UserReposInfoTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

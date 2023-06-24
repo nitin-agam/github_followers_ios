@@ -9,17 +9,6 @@ import UIKit
 
 extension CAGradientLayer {
     
-    class func gradientLayer(frame: CGRect?, view: UIView?, colors: [UIColor]) -> CAGradientLayer {
-        let layer = CAGradientLayer()
-        if let viewFrame = frame {
-            layer.frame = viewFrame
-        } else if let sender = view {
-            layer.frame = sender.frame
-        }
-        layer.colors = [UIColor.gradientFirst.cgColor, UIColor.gradientSecond.cgColor]
-        return layer
-    }
-    
     class func buttonLayer(frame: CGRect?, button: UIButton?) -> CAGradientLayer {
         let layer = CAGradientLayer()
         if let buttonFrame = frame {

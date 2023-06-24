@@ -11,6 +11,7 @@ public typealias HTTPParameters = [String: Any]
 
 public enum NAEndpoint {
     case followers(username: String, pageCount: Int, pageNumber: Int)
+    case userDetail(username: String)
 }
 
 extension NAEndpoint {
@@ -30,6 +31,10 @@ extension NAEndpoint {
             let queryItems = [NAQueryItem(key: "per_page", value: "\(pageCount)"),
                               NAQueryItem(key: "page", value: "\(pageNumber)")]
             return .make(endpoint: "users/\(username)/followers", headers: nil, queries: queryItems, method: .GET, version: nil, params: nil)
+            
+            
+        case .userDetail(let username):
+            return .make(endpoint: "users/\(username)", headers: nil, queries: nil, method: .GET, version: nil, params: nil)
         }
     }
 }

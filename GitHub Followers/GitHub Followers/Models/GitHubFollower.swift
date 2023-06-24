@@ -1,6 +1,6 @@
 //
 //  GitHubFollower.swift
-//  GitHub
+//  GitHub Followers
 //
 //  Created by Nitin Aggarwal on 24/06/23.
 //

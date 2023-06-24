@@ -101,7 +101,9 @@ extension FollowerListViewController: UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        guard let selectedFollower = dataSource.objectAt(indexPath) else { return }
+        let detailController = UserDetailViewController(username: selectedFollower.followerUserName)
+        navigationController?.pushViewController(detailController, animated: true)
     }
 }
 

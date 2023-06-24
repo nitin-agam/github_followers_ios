@@ -61,4 +61,3 @@ class AppTutorialTableCell: BaseTableCell {
         }
     }
 }
-
