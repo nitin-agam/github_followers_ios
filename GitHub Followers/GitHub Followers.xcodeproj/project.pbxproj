@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		C73D8CCC2A46060300A1997A /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CCB2A46060300A1997A /* UIStackView+Extension.swift */; };
 		C73D8CCE2A46A30300A1997A /* UserDefault+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CCD2A46A30300A1997A /* UserDefault+Extension.swift */; };
+		C73D8CD62A46A4D100A1997A /* NARequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CD02A46A4D100A1997A /* NARequestFactory.swift */; };
+		C73D8CD72A46A4D100A1997A /* NAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CD12A46A4D100A1997A /* NAError.swift */; };
+		C73D8CD92A46A4D100A1997A /* NANetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CD32A46A4D100A1997A /* NANetworkManager.swift */; };
+		C73D8CDA2A46A4D100A1997A /* NANetworkKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CD42A46A4D100A1997A /* NANetworkKeys.swift */; };
+		C73D8CDB2A46A4D100A1997A /* NAEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CD52A46A4D100A1997A /* NAEndpoint.swift */; };
+		C73D8CE02A46A69200A1997A /* GitHubProfileCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CDC2A46A69200A1997A /* GitHubProfileCollectionCell.swift */; };
+		C73D8CE22A46A69200A1997A /* FollowerListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CDE2A46A69200A1997A /* FollowerListDataSource.swift */; };
+		C73D8CE32A46A69200A1997A /* GitHubFollowerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CDF2A46A69200A1997A /* GitHubFollowerViewModel.swift */; };
+		C73D8CE52A46A7FA00A1997A /* BaseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CE42A46A7FA00A1997A /* BaseCollectionCell.swift */; };
+		C73D8CE82A46A82B00A1997A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C73D8CE72A46A82B00A1997A /* SDWebImage */; };
+		C73D8CEA2A46A8C800A1997A /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CE92A46A8C800A1997A /* UICollectionView+Extension.swift */; };
+		C73D8CEC2A46AA8F00A1997A /* GitHubFollower.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CEB2A46AA8F00A1997A /* GitHubFollower.swift */; };
 		C75C8C8C2A45DFFB00B46DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8C8B2A45DFFB00B46DEF /* AppDelegate.swift */; };
 		C75C8C952A45DFFD00B46DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75C8C942A45DFFD00B46DEF /* Assets.xcassets */; };
 		C75C8C982A45DFFD00B46DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75C8C962A45DFFD00B46DEF /* LaunchScreen.storyboard */; };
@@ -33,6 +45,17 @@
 /* Begin PBXFileReference section */
 		C73D8CCB2A46060300A1997A /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		C73D8CCD2A46A30300A1997A /* UserDefault+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Extension.swift"; sourceTree = "<group>"; };
+		C73D8CD02A46A4D100A1997A /* NARequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NARequestFactory.swift; sourceTree = "<group>"; };
+		C73D8CD12A46A4D100A1997A /* NAError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NAError.swift; sourceTree = "<group>"; };
+		C73D8CD32A46A4D100A1997A /* NANetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NANetworkManager.swift; sourceTree = "<group>"; };
+		C73D8CD42A46A4D100A1997A /* NANetworkKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NANetworkKeys.swift; sourceTree = "<group>"; };
+		C73D8CD52A46A4D100A1997A /* NAEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NAEndpoint.swift; sourceTree = "<group>"; };
+		C73D8CDC2A46A69200A1997A /* GitHubProfileCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubProfileCollectionCell.swift; sourceTree = "<group>"; };
+		C73D8CDE2A46A69200A1997A /* FollowerListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowerListDataSource.swift; sourceTree = "<group>"; };
+		C73D8CDF2A46A69200A1997A /* GitHubFollowerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubFollowerViewModel.swift; sourceTree = "<group>"; };
+		C73D8CE42A46A7FA00A1997A /* BaseCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionCell.swift; sourceTree = "<group>"; };
+		C73D8CE92A46A8C800A1997A /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		C73D8CEB2A46AA8F00A1997A /* GitHubFollower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubFollower.swift; sourceTree = "<group>"; };
 		C75C8C882A45DFFB00B46DEF /* GitHub Followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75C8C8B2A45DFFB00B46DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C75C8C942A45DFFD00B46DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73D8CE82A46A82B00A1997A /* SDWebImage in Frameworks */,
 				C75C8CB72A45E2C300B46DEF /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +91,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C73D8CCF2A46A4D100A1997A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C73D8CD02A46A4D100A1997A /* NARequestFactory.swift */,
+				C73D8CD12A46A4D100A1997A /* NAError.swift */,
+				C73D8CD32A46A4D100A1997A /* NANetworkManager.swift */,
+				C73D8CD42A46A4D100A1997A /* NANetworkKeys.swift */,
+				C73D8CD52A46A4D100A1997A /* NAEndpoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		C75C8C7F2A45DFFB00B46DEF = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +122,7 @@
 		C75C8C8A2A45DFFB00B46DEF /* GitHub Followers */ = {
 			isa = PBXGroup;
 			children = (
+				C73D8CCF2A46A4D100A1997A /* Networking */,
 				C75C8CC92A45FE4B00B46DEF /* Utility */,
 				C75C8CA02A45E08100B46DEF /* AppDelegate */,
 				C75C8CA12A45E08E00B46DEF /* Modules */,
@@ -121,10 +158,10 @@
 			children = (
 				C75C8CB82A45E64800B46DEF /* Common */,
 				C75C8CA72A45E19700B46DEF /* Tutorials */,
+				C75C8CA62A45E17900B46DEF /* Search */,
+				C75C8CA82A45E1B800B46DEF /* Followers */,
 				C75C8CAA2A45E1DC00B46DEF /* Details */,
 				C75C8CA92A45E1C200B46DEF /* Favorites */,
-				C75C8CA82A45E1B800B46DEF /* Followers */,
-				C75C8CA62A45E17900B46DEF /* Search */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -139,6 +176,7 @@
 				C75C8CCC2A45FFBF00B46DEF /* String+Extension.swift */,
 				C73D8CCB2A46060300A1997A /* UIStackView+Extension.swift */,
 				C73D8CCD2A46A30300A1997A /* UserDefault+Extension.swift */,
+				C73D8CE92A46A8C800A1997A /* UICollectionView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -146,6 +184,7 @@
 		C75C8CA32A45E0A900B46DEF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C73D8CE42A46A7FA00A1997A /* BaseCollectionCell.swift */,
 				C75C8CBF2A45FAC200B46DEF /* BaseTableCell.swift */,
 			);
 			path = Views;
@@ -154,6 +193,7 @@
 		C75C8CA42A45E0B900B46DEF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C73D8CEB2A46AA8F00A1997A /* GitHubFollower.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,6 +227,9 @@
 			isa = PBXGroup;
 			children = (
 				C75C8CAF2A45E21600B46DEF /* FollowerListViewController.swift */,
+				C73D8CDC2A46A69200A1997A /* GitHubProfileCollectionCell.swift */,
+				C73D8CDE2A46A69200A1997A /* FollowerListDataSource.swift */,
+				C73D8CDF2A46A69200A1997A /* GitHubFollowerViewModel.swift */,
 			);
 			path = Followers;
 			sourceTree = "<group>";
@@ -241,6 +284,7 @@
 			name = "GitHub Followers";
 			packageProductDependencies = (
 				C75C8CB62A45E2C300B46DEF /* SnapKit */,
+				C73D8CE72A46A82B00A1997A /* SDWebImage */,
 			);
 			productName = "GitHub Followers";
 			productReference = C75C8C882A45DFFB00B46DEF /* GitHub Followers.app */;
@@ -272,6 +316,7 @@
 			mainGroup = C75C8C7F2A45DFFB00B46DEF;
 			packageReferences = (
 				C75C8CB52A45E2C300B46DEF /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C73D8CE62A46A82B00A1997A /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = C75C8C892A45DFFB00B46DEF /* Products */;
 			projectDirPath = "";
@@ -299,10 +344,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73D8CE02A46A69200A1997A /* GitHubProfileCollectionCell.swift in Sources */,
+				C73D8CD62A46A4D100A1997A /* NARequestFactory.swift in Sources */,
 				C75C8CCD2A45FFBF00B46DEF /* String+Extension.swift in Sources */,
 				C75C8CB02A45E21600B46DEF /* FollowerListViewController.swift in Sources */,
+				C73D8CDA2A46A4D100A1997A /* NANetworkKeys.swift in Sources */,
 				C75C8CAC2A45E1F600B46DEF /* SearchViewController.swift in Sources */,
 				C75C8CBE2A45FA5F00B46DEF /* UITableView+Extension.swift in Sources */,
+				C73D8CD92A46A4D100A1997A /* NANetworkManager.swift in Sources */,
+				C73D8CEA2A46A8C800A1997A /* UICollectionView+Extension.swift in Sources */,
+				C73D8CD72A46A4D100A1997A /* NAError.swift in Sources */,
 				C75C8CBC2A45E6BE00B46DEF /* AppTutorial.swift in Sources */,
 				C75C8CB42A45E23900B46DEF /* UserDetailViewController.swift in Sources */,
 				C75C8C8C2A45DFFB00B46DEF /* AppDelegate.swift in Sources */,
@@ -313,9 +364,14 @@
 				C75C8CC02A45FAC200B46DEF /* BaseTableCell.swift in Sources */,
 				C75C8CC82A45FE1200B46DEF /* CAGradientLayer+Extension.swift in Sources */,
 				C75C8CC22A45FB0E00B46DEF /* AppTutorialTableCell.swift in Sources */,
+				C73D8CE52A46A7FA00A1997A /* BaseCollectionCell.swift in Sources */,
+				C73D8CDB2A46A4D100A1997A /* NAEndpoint.swift in Sources */,
 				C73D8CCE2A46A30300A1997A /* UserDefault+Extension.swift in Sources */,
 				C75C8CC62A45FCC600B46DEF /* UIColor+Extension.swift in Sources */,
+				C73D8CE32A46A69200A1997A /* GitHubFollowerViewModel.swift in Sources */,
 				C75C8CBA2A45E65700B46DEF /* BaseViewController.swift in Sources */,
+				C73D8CEC2A46AA8F00A1997A /* GitHubFollower.swift in Sources */,
+				C73D8CE22A46A69200A1997A /* FollowerListDataSource.swift in Sources */,
 				C75C8CAE2A45E20500B46DEF /* AppTutorialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +580,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C73D8CE62A46A82B00A1997A /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		C75C8CB52A45E2C300B46DEF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -535,6 +599,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C73D8CE72A46A82B00A1997A /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C73D8CE62A46A82B00A1997A /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		C75C8CB62A45E2C300B46DEF /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C75C8CB52A45E2C300B46DEF /* XCRemoteSwiftPackageReference "SnapKit" */;

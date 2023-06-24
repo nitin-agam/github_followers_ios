@@ -103,7 +103,9 @@ class SearchViewController: BaseViewController {
     }
     
     @objc private func handleSearchTapped() {
-        
+        guard let username = usernameTextField.text, username.isEmpty == false else { return }
+        let listController = FollowerListViewController(username: username)
+        navigationController?.pushViewController(listController, animated: true)
     }
 }
 
