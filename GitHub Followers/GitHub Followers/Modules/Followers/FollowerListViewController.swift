@@ -40,11 +40,19 @@ class FollowerListViewController: BaseViewController {
         return collectionView
     }()
     
+    private let activityIndicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView(style: .large)
+        indicator.tintColor = .secondaryLabel
+        indicator.hidesWhenStopped = true
+        return indicator
+    }()
+    
     private var searchDelayTimer: Timer?
     private let dataSource = FollowerListDataSource()
     private var username: String
     private var numberOfItemsInRow: CGFloat = 3
     private var gridSpacing: CGFloat = 10
+    private let emptyStateView = FollowerEmptyStateView(frame: .zero)
     
     
     // MARK: - Life Cycle
@@ -66,21 +74,39 @@ class FollowerListViewController: BaseViewController {
     
     // MARK: - Private Methods
     private func initialSetup() {
-        navigationItem.title = username
+        navigationItem.title = username + "'s followers"
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
         
-        view.addSubviews(collectionView)
+        view.addSubviews(collectionView, emptyStateView, activityIndicator)
+        
         collectionView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+        
+        emptyStateView.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.height.equalToSuperview().multipliedBy(0.7)
+            make.width.equalToSuperview().multipliedBy(0.85)
+        }
+        
+        activityIndicator.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
+        
+        collectionView.isHidden = true
+        emptyStateView.isHidden = true
     }
 
     private func initialFetch() {
+        activityIndicator.startAnimating()
         dataSource.fetchFollowers(for: username) { [weak self] in
             guard let self = self else { return }
             DispatchQueue.main.async {
+                self.activityIndicator.stopAnimating()
                 self.collectionView.reloadData()
+                self.collectionView.isHidden = self.dataSource.numberOfItem(in: 0) == 0
+                self.emptyStateView.isHidden = self.dataSource.numberOfItem(in: 0) != 0
             }
         }
     }
