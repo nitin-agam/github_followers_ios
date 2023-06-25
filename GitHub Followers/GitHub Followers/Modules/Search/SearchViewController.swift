@@ -69,7 +69,7 @@ class SearchViewController: BaseViewController {
         
         stackView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().offset(-150)
+            make.centerY.equalToSuperview().offset(-80)
         }
         
         usernameTextField.snp.makeConstraints { make in
