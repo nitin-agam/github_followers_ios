@@ -9,30 +9,12 @@ import UIKit
 
 class UserReposInfoTableCell: BaseTableCell {
     
-    private let publicReposValueLabel: UILabel = {
-        let label = UILabel()
-        label.font = .systemFont(ofSize: 24, weight: .semibold)
-        label.textColor = .label
-        label.text = "0"
-        return label
-    }()
-    
-    private let publicGistsValueLabel: UILabel = {
-        let label = UILabel()
-        label.font = .systemFont(ofSize: 24, weight: .semibold)
-        label.textColor = .label
-        label.text = "0"
-        return label
-    }()
+    private let publicReposValueLabel = UILabel(text: "0", font: .systemFont(ofSize: 24, weight: .semibold))
+    private let publicGistsValueLabel = UILabel(text: "0", font: .systemFont(ofSize: 24, weight: .semibold))
     
     private lazy var submitButton: UIButton = {
-        let button = UIButton()
-        button.setTitleColor(.white, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
-        button.layer.cornerRadius = LayoutConstant.defaultCornerRadius
-        button.layer.masksToBounds = true
+        let button = UIButton(title: "GitHub Profile", font: .systemFont(ofSize: 18, weight: .semibold), titleColor: .white, shouldRounded: true)
         button.addTarget(self, action: #selector(handleSubmitTapped), for: .touchUpInside)
-        button.setTitle("GitHub Profile", for: .normal)
         return button
     }()
     
@@ -95,15 +77,8 @@ class UserReposInfoTableCell: BaseTableCell {
     }
     
     private func buildMetaStackView(with valueLabel: UILabel, systemIcon: String, title: String, value: Int = 0) -> UIStackView {
-        let imageView = UIImageView(image: UIImage(systemName: systemIcon)?.withRenderingMode(.alwaysTemplate))
-        imageView.tintColor = .secondaryLabel
-        imageView.contentMode = .scaleAspectFit
-        
-        let titleLabel = UILabel()
-        titleLabel.text = title
-        titleLabel.textColor = .secondaryLabel
-        titleLabel.font = .systemFont(ofSize: 18)
-        
+        let imageView = UIImageView(image: UIImage(systemName: systemIcon)?.withRenderingMode(.alwaysTemplate), mode: .scaleAspectFit, tintColor: .secondaryLabel)
+        let titleLabel = UILabel(text: title, textColor: .secondaryLabel, font: .systemFont(ofSize: 18))
         let horizontalStack = UIStackView([imageView, titleLabel], axis: .horizontal, spacing: 12)
         let verticalStack = UIStackView([horizontalStack, valueLabel], axis: .vertical, spacing: 12, alignment: .center)
         return verticalStack

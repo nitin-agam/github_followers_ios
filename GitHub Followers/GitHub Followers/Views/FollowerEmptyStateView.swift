@@ -9,21 +9,9 @@ import UIKit
 
 class FollowerEmptyStateView: UIView {
     
-    private let messageLabel: UILabel = {
-        let label = UILabel()
-        label.textAlignment = .center
-        label.font = .systemFont(ofSize: 30, weight: .medium)
-        label.textColor = .secondaryLabel
-        label.text = "This user doesn't have any followers 😢"
-        label.numberOfLines = 0
-        return label
-    }()
+    private let messageLabel = UILabel(text: "This user doesn't have any followers 😢", lines: 0, alignment: .center, textColor: .secondaryLabel, font: .systemFont(ofSize: 30, weight: .medium))
+    private let placeholderImageView = UIImageView(image: UIImage(named: "icon_empty_logo"), mode: .scaleAspectFill)
     
-    private let placeholderImageView: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "icon_empty_logo"))
-        imageView.contentMode = .scaleAspectFill
-        return imageView
-    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)

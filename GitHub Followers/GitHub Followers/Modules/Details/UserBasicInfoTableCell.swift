@@ -10,42 +10,16 @@ import UIKit
 class UserBasicInfoTableCell: BaseTableCell {
     
     private let profileImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
+        let imageView = UIImageView(mode: .scaleAspectFill, tintColor: nil, radius: 8)
         imageView.clipsToBounds = true
-        imageView.layer.cornerRadius = 8
-        imageView.layer.masksToBounds = true
         return imageView
     }()
     
-    private let usernameLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .label
-        label.font = .systemFont(ofSize: 22, weight: .semibold)
-        return label
-    }()
+    private let usernameLabel = UILabel(text: nil, font: .systemFont(ofSize: 22, weight: .semibold))
+    private let fullNameLabel = UILabel(text: nil, textColor: .secondaryLabel, font: .systemFont(ofSize: 18))
+    private let locationLabel = UILabel(text: nil, textColor: .secondaryLabel, font: .systemFont(ofSize: 18))
+    private let bioLabel = UILabel(text: nil, lines: 0, font: .systemFont(ofSize: 20))
     
-    private let fullNameLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .secondaryLabel
-        label.font = .systemFont(ofSize: 18, weight: .regular)
-        return label
-    }()
-    
-    private let locationLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .secondaryLabel
-        label.font = .systemFont(ofSize: 18, weight: .regular)
-        return label
-    }()
-    
-    private let bioLabel: UILabel = {
-        let label = UILabel()
-        label.font = .systemFont(ofSize: 20, weight: .regular)
-        label.numberOfLines = 0
-        label.textColor = .label
-        return label
-    }()
     
     var userDetail: GitHubUserViewModel? {
         didSet {

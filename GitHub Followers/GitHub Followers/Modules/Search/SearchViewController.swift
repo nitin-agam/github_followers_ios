@@ -10,13 +10,6 @@ import UIKit
 class SearchViewController: BaseViewController {
     
     // MARK: - Properties
-    private let logoImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(named: "icon_github_followers")
-        return imageView
-    }()
-    
     private lazy var usernameTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Enter Username"
@@ -32,15 +25,12 @@ class SearchViewController: BaseViewController {
     }()
     
     private lazy var searchButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("GET FOLLOWERS", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
-        button.layer.cornerRadius = LayoutConstant.defaultCornerRadius
-        button.layer.masksToBounds = true
+        let button = UIButton(title: "Get Followers", font: .systemFont(ofSize: 18, weight: .semibold), titleColor: .white, shouldRounded: true)
         button.addTarget(self, action: #selector(handleSearchTapped), for: .touchUpInside)
         return button
     }()
+    
+    private let logoImageView = UIImageView(image: UIImage(named: "icon_github_followers"), tintColor: nil)
     
     
     // MARK: - LifeCycle

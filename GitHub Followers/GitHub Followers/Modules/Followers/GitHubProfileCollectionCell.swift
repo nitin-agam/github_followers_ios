@@ -11,19 +11,13 @@ import SDWebImage
 class GitHubProfileCollectionCell: BaseCollectionCell {
     
     private let profileImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
+        let imageView = UIImageView(mode: .scaleAspectFill, tintColor: nil)
         imageView.clipsToBounds = true
         return imageView
     }()
     
-    private let usernameLabel: UILabel = {
-        let label = UILabel()
-        label.textAlignment = .center
-        label.textColor = .label
-        label.font = .systemFont(ofSize: 16, weight: .semibold)
-        return label
-    }()
+    private let usernameLabel = UILabel(text: nil, alignment: .center, font: .systemFont(ofSize: 16, weight: .semibold))
+    
     
     override func initialSetup() {
         super.initialSetup()
@@ -55,6 +49,7 @@ class GitHubProfileCollectionCell: BaseCollectionCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        self.profileImageView.image = nil
+        profileImageView.image = nil
+        usernameLabel.text = nil
     }
 }

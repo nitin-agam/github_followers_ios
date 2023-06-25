@@ -104,7 +104,7 @@ extension UserDetailViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 100
+        return 80
     }
     
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
@@ -112,11 +112,7 @@ extension UserDetailViewController {
         guard let createdAt = dataSource.userDetail?.createdAtString else { return nil }
         
         let headerView = UIView()
-        let titleLabel = UILabel()
-        titleLabel.text = "Joined GitHub on \(createdAt)"
-        titleLabel.textAlignment = .center
-        titleLabel.textColor = .tertiaryLabel
-        titleLabel.font = .systemFont(ofSize: 18, weight: .regular)
+        let titleLabel = UILabel(text: "Joined GitHub on \(createdAt)", alignment: .center, textColor: .tertiaryLabel, font: .systemFont(ofSize: 18))
         headerView.addSubview(titleLabel)
         titleLabel.snp.makeConstraints { (make) in
             make.center.equalToSuperview()

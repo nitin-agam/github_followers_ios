@@ -32,6 +32,7 @@
 		C73D8CFE2A47417E00A1997A /* FollowerEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CFD2A47417E00A1997A /* FollowerEmptyStateView.swift */; };
 		C73D8D002A4891D900A1997A /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8CFF2A4891D900A1997A /* UILabel+Extension.swift */; };
 		C73D8D022A48948D00A1997A /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8D012A48948D00A1997A /* UIButton+Extension.swift */; };
+		C73D8D042A48962500A1997A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D8D032A48962500A1997A /* UIImageView+Extension.swift */; };
 		C75C8C8C2A45DFFB00B46DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C8C8B2A45DFFB00B46DEF /* AppDelegate.swift */; };
 		C75C8C952A45DFFD00B46DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75C8C942A45DFFD00B46DEF /* Assets.xcassets */; };
 		C75C8C982A45DFFD00B46DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75C8C962A45DFFD00B46DEF /* LaunchScreen.storyboard */; };
@@ -77,6 +78,7 @@
 		C73D8CFD2A47417E00A1997A /* FollowerEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerEmptyStateView.swift; sourceTree = "<group>"; };
 		C73D8CFF2A4891D900A1997A /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		C73D8D012A48948D00A1997A /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		C73D8D032A48962500A1997A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		C75C8C882A45DFFB00B46DEF /* GitHub Followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75C8C8B2A45DFFB00B46DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C75C8C942A45DFFD00B46DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				C73D8CFB2A47272100A1997A /* Date+Extension.swift */,
 				C73D8CFF2A4891D900A1997A /* UILabel+Extension.swift */,
 				C73D8D012A48948D00A1997A /* UIButton+Extension.swift */,
+				C73D8D032A48962500A1997A /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				C75C8CAC2A45E1F600B46DEF /* SearchViewController.swift in Sources */,
 				C75C8CBE2A45FA5F00B46DEF /* UITableView+Extension.swift in Sources */,
 				C73D8D002A4891D900A1997A /* UILabel+Extension.swift in Sources */,
+				C73D8D042A48962500A1997A /* UIImageView+Extension.swift in Sources */,
 				C73D8CD92A46A4D100A1997A /* NANetworkManager.swift in Sources */,
 				C73D8CF62A46DAF300A1997A /* UserDetailDataSource.swift in Sources */,
 				C73D8CEA2A46A8C800A1997A /* UICollectionView+Extension.swift in Sources */,

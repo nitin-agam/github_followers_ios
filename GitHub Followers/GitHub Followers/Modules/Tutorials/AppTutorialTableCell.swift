@@ -10,27 +10,9 @@ import SnapKit
 
 class AppTutorialTableCell: BaseTableCell {
     
-    private let icon: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = UIColor.gradientSecond
-        return imageView
-    }()
-    
-    private let titleLabel: UILabel = {
-        let label = UILabel()
-        label.font = .systemFont(ofSize: 20, weight: .semibold)
-        label.textColor = UIColor.gradientSecond
-        return label
-    }()
-    
-    private let detailLabel: UILabel = {
-        let label = UILabel()
-        label.font = .systemFont(ofSize: 18, weight: .regular)
-        label.numberOfLines = 0
-        label.textColor = .label
-        return label
-    }()
+    private let icon = UIImageView(tintColor: .gradientSecond)
+    private let titleLabel = UILabel(text: nil, textColor: .gradientSecond, font: .systemFont(ofSize: 20, weight: .semibold))
+    private let detailLabel = UILabel(text: nil, lines: 0, textColor: .label, font: .systemFont(ofSize: 18))
     
     var tutorial: AppTutorial? {
         didSet {
@@ -51,9 +33,8 @@ class AppTutorialTableCell: BaseTableCell {
         
         contentStack.snp.makeConstraints { make in
             make.top.equalToSuperview()
-            make.bottom.equalTo(-30)
+            make.bottom.right.equalTo(-30)
             make.left.equalTo(30)
-            make.right.equalTo(-30)
         }
         
         icon.snp.makeConstraints { (make) in
