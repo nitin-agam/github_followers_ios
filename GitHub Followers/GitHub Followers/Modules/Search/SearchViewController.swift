@@ -90,8 +90,6 @@ class SearchViewController: BaseViewController {
                                                    y: 0,
                                                    width: LayoutConstant.defaultWidth,
                                                    height: LayoutConstant.defaultHeight))
-        
-        usernameTextField.text = "nitin-agam"
     }
     
     @objc private func handleSearchTapped() {
