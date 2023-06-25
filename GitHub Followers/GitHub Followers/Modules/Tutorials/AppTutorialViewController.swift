@@ -25,8 +25,8 @@ class AppTutorialViewController: UITableViewController {
         tableView.register(cellWithClass: AppTutorialTableCell.self)
     }
     
-    @objc private func goToNextPage() {
-        
+    @objc private func handleSubmitClicked() {
+        dismiss(animated: true)
     }
 }
 
@@ -47,18 +47,8 @@ extension AppTutorialViewController {
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
         let headerView = UIView()
-        
-        let paragraph = NSMutableParagraphStyle()
-        paragraph.lineSpacing = 18
-        let greetingText = NSMutableAttributedString(string: "GitHub Introduction",
-                                                     attributes: [.font: UIFont.systemFont(ofSize: 28, weight: .semibold), .foregroundColor: UIColor.gradientSecond])
-        
-        let titleLabel = UILabel()
-        titleLabel.attributedText = greetingText
-        titleLabel.numberOfLines = 0
-        titleLabel.textAlignment = .center
+        let titleLabel = UILabel(text: "GitHub Introduction", lines: 0, alignment: .center, textColor: .gradientSecond, font: .systemFont(ofSize: 28, weight: .semibold))
         headerView.addSubview(titleLabel)
         titleLabel.snp.makeConstraints { (make) in
             make.left.equalTo(30)
@@ -77,13 +67,8 @@ extension AppTutorialViewController {
         
         let footerView = UIView()
         
-        let continueButton = UIButton()
-        continueButton.setTitle("GET STARTED", for: .normal)
-        continueButton.titleLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
-        continueButton.setTitleColor(.white, for: .normal)
-        continueButton.layer.cornerRadius = LayoutConstant.defaultCornerRadius
-        continueButton.layer.masksToBounds = true
-        continueButton.addTarget(self, action: #selector(goToNextPage), for: .touchUpInside)
+        let continueButton = UIButton(title: "Get Started", font: .systemFont(ofSize: 18, weight: .semibold), titleColor: .white, shouldRounded: true)
+        continueButton.addTarget(self, action: #selector(handleSubmitClicked), for: .touchUpInside)
         footerView.addSubview(continueButton)
         
         continueButton.snp.makeConstraints { (make) in
@@ -99,4 +84,3 @@ extension AppTutorialViewController {
         return footerView
     }
 }
-

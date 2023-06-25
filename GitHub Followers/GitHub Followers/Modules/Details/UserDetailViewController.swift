@@ -34,7 +34,7 @@ class UserDetailViewController: UITableViewController {
     
     // MARK: - Private Methods
     private func initialSetup() {
-        navigationItem.title = "Profile Detail"
+        navigationItem.title = "Public Profile"
         view.backgroundColor = .systemBackground
         tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorStyle = .none
