@@ -27,10 +27,10 @@ class NANetworkManager {
     
     // MARK: - Private Method
     private func executeRequest(request: URLRequest, completion: Handler) {
-        logStartRequest(request)
+        request.log()
         let dataTask = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
             if let self = self {
-                self.logEndRequest(response, data: data, error: error)
+                response?.log(data: data, error: error, printJSON: true)
                 self.result(from: data, response: response, request: request, completion)
             } else {
                 completion?(.failure(NAError(title: "No internet connection.")))
@@ -62,42 +62,58 @@ extension NANetworkManager {
     }
 }
 
-extension NANetworkManager {
+extension URLRequest {
     
-    func logStartRequest(_ request: URLRequest) {
-        let body = request.httpBody.map { String(decoding: $0, as: UTF8.self) } ?? "Nil"
-        let requestUrl = request.url?.absoluteString ?? "Nil"
+    func log() {
+        let body = self.httpBody.map { String(decoding: $0, as: UTF8.self) } ?? "Nil"
+        let requestUrl = self.url?.absoluteString ?? "Nil"
         
         var headerPrint = ""
-        #if DEBUG
-        headerPrint = "⚡️⚡️⚡️⚡️ HEADERS -> \(String(describing: request.allHTTPHeaderFields))"
-        #endif
+#if DEBUG
+        headerPrint = "⚡️⚡️⚡️⚡️ HEADERS -> \(String(describing: self.allHTTPHeaderFields))"
+#endif
         
         let networkRequest = """
             ⚡️⚡️⚡️⚡️ REQUEST ⚡️⚡️⚡️⚡️
             ⚡️⚡️⚡️⚡️ URL -> \(requestUrl)
-            ⚡️⚡️⚡️⚡️ METHOD -> \(String(describing: request.httpMethod))
+            ⚡️⚡️⚡️⚡️ METHOD -> \(String(describing: self.httpMethod))
             ⚡️⚡️⚡️⚡️ BODY -> \(body)
             \(headerPrint)
             ⚡️⚡️⚡️⚡️ ---------------------- ⚡️⚡️⚡️⚡️
         """
         print(networkRequest)
     }
+}
+
+extension URLResponse {
     
-    func logEndRequest(_ response: URLResponse?, data: Data?, error: Error?) {
+    func log(data: Data?, error: Error?, printJSON: Bool = false) {
         var statusCode = 0
-        if let httpUrlResponse = response as? HTTPURLResponse {
+        if let httpUrlResponse = self as? HTTPURLResponse {
             statusCode = httpUrlResponse.statusCode
         }
         
+        let jsonToPrint = printJSON ? "⚡️⚡️⚡️⚡️ DATA JSON -> \(String(describing: data?.jsonObject))" : ""
+        
         let networkResponse = """
         ⚡️⚡️⚡️⚡️ RESPONSE ⚡️⚡️⚡️⚡️
-        ⚡️⚡️⚡️⚡️ URL -> \(response?.url?.absoluteString ?? "NIL")
+        ⚡️⚡️⚡️⚡️ URL -> \(self.url?.absoluteString ?? "nil")
+        ⚡️⚡️⚡️⚡️ DATA -> \(String(describing: data))
         ⚡️⚡️⚡️⚡️ STATUS CODE -> \(statusCode)
         ⚡️⚡️⚡️⚡️ ERROR -> \(String(describing: error))
+        \(jsonToPrint)
         ⚡️⚡️⚡️⚡️ ---------------------- ⚡️⚡️⚡️⚡️
     """
         print(networkResponse)
     }
 }
 
+extension Data {
+    var jsonObject: Any? {
+        do {
+            return try JSONSerialization.jsonObject(with: self, options: .allowFragments)
+        } catch {
+            return nil
+        }
+    }
+}
